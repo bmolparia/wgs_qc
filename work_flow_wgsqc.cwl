@@ -130,11 +130,8 @@ steps:
       sam_file: MarkDuplicates/duplicates_marked_sam
     out: [bam_file]
 
-  ## NOTE: This doesn't work at the moment because cwl
-  ## ends up using  OpenJDK 64-Bit. Sam command works
-  ## when used outside of cwl because it uses
-  ## Java HotSpot(TM) 64-Bit
-
+  ## NOTE: This won't work with  OpenJDK 64-Bit. 
+ 
   # ValidateSamFile:
   #   run: picard_ValidateSamFile.cwl
   #   in:
