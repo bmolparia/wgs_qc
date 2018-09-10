@@ -1,0 +1,16 @@
+sample_id: samp
+
+read_file_1: 
+    class: File
+    path: /path/to/forward_reads.fq.gz
+
+read_file_2: 
+    class: File
+    path: /path/to/reverse_reads.fq.gz
+
+bwa_index: /path/to/bwa_index_files 
+picard_index: /path/to/picard_index_files
+
+num_cpus: 4
+
+is_paired: "true"
